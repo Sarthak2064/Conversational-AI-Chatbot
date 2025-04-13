@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Solar Powered Street Light",
+        "model": "ABC-SL100",
+        "size": "Height: 10ft, Width: 1ft",
+        "battery_life": "Lasts up to 12 hours each night",
+        "features": [
+            "Auto on/off sensor",
+            "Weatherproof",
+            "High-efficiency solar panel"
+        ]
+    },
+    {
+        "name": "Solar Powered Driveway Light",
+        "model": "ABC-DL200",
+        "size": "Diameter: 6 inches",
+        "battery_life": "Lasts up to 10 hours each night",
+        "features": [
+            "Motion detection",
+            "Durable aluminum body",
+            "Soft ambient glow"
+        ]
+    },
+    {
+        "name": "Solar Powered Outdoor Wall Light",
+        "model": "ABC-WL300",
+        "size": "Height: 8 inches, Width: 4 inches",
+        "battery_life": "Lasts up to 8 hours each night",
+        "features": [
+            "Easy wall mount",
+            "Warm white LED",
+            "Automatic charging"
+        ]
+    }
+]
