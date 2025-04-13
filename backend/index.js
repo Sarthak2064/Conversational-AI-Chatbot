@@ -42,7 +42,7 @@ If the user says something like "no", "no thanks", "no thank you", "not interest
         let reply = "Sorry, I couldn't understand.";
 
         if (geminiResponse.includes("company_info")) {
-            const companyInfoResponse = await axios.get("http://localhost:3000/api/company-info");
+            const companyInfoResponse = await axios.get("https://conversational-ai-chatbot-os6g.onrender.com/api/company-info");
             const { company_name, locations, business_hours } = companyInfoResponse.data;
 
             const plainText = `Company Name: ${company_name}\n` +
@@ -52,7 +52,7 @@ If the user says something like "no", "no thanks", "no thank you", "not interest
             reply = plainText;
             return res.json({ reply });
         } else if (geminiResponse.includes("product_info")) {
-            const productsInfoResponse = await axios.get("http://localhost:3000/api/products");
+            const productsInfoResponse = await axios.get("https://conversational-ai-chatbot-os6g.onrender.com/api/products");
             const products = productsInfoResponse.data;
 
             const plainText = products.map(product => {
@@ -70,7 +70,7 @@ If the user says something like "no", "no thanks", "no thank you", "not interest
             return res.json({ reply });
         }
         else if (geminiResponse.includes("product_image")) {
-            const productImageResponse = await axios.get("http://localhost:3000/api/product-images");
+            const productImageResponse = await axios.get("https://conversational-ai-chatbot-os6g.onrender.com/api/product-images");
             const productImages = productImageResponse.data;
 
             // Combine Gemini response and user message for better matching
